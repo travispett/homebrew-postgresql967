@@ -13,3 +13,12 @@ To install this Homebrew tap:
 brew install travispett/homebrew-postgresql967/postgresql@9.6
 brew link -f postgresql@9.6
 ```
+
+To uninstall this Homebrew tap and reinstall the main Postgres tap:
+```shell
+brew uninstall postgresql@9.6
+brew cleanup postgresql@9.6
+brew install postgresql@9.6
+brew link -f postgresql@9.6
+brew services restart postgresql@9.6
+```
